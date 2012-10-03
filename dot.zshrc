@@ -23,6 +23,7 @@ bindkey "^N" history-beginning-search-forward-end
 alias g="git"
 alias grep="grep --color"
 alias github="open https://github.com"
+alias diary="open http://d.hatena.ne.jp/shimosuk/"
 
 #MacVim.appのVimを使用するためのalias
 alias mvim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'

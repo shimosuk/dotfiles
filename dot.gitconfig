@@ -11,6 +11,7 @@
         ri = rebase -i
         ss = stash
         pp = stash pop
+        rb = rebase
 [user]
 	name = ryosuke shimomura
 	email = shimosuk.shimosuke@gmail.com

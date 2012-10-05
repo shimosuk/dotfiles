@@ -1,4 +1,4 @@
 subject
 
 info
-ticket_url
+ticket 

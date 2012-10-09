@@ -23,6 +23,7 @@ bindkey "^N" history-beginning-search-forward-end
 alias g="git"
 alias grep="grep --color"
 alias github="open https://github.com"
+alias emoji="open http://www.emoji-cheat-sheet.com"
 alias diary="open http://d.hatena.ne.jp/shimosuk/"
 
 #MacVim.appのVimを使用するためのalias

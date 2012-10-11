@@ -1,9 +1,16 @@
 tags
 *.swp
 *.swo
+*.swn
 *.DS_Store
 .rbenv-version
+.ruby-version
 
 # Microsoft系の設定
 *.TMP
 *~$*.doc
+.rvmrc.*
+*.ldb
+
+# project
+requirements/proposals/2012*

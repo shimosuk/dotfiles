@@ -20,13 +20,13 @@
         pp = stash pop
 [user]
         name = ryosuke shimomura
-        email = shimosuk.shimosuke@gmail.com
+        email = r-shimomura@esm.co.jp
 [github]
         user = shimosuk
 [color]
         ui = auto
 [core]
-        editor = /usr/local/bin/vim
+        editor = env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim -u $HOME/.vimrc
         excludesfile = ~/.gitignore
 [commit]
         template = ~/.gitmessage.txt

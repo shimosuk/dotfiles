@@ -60,5 +60,5 @@ let g:indent_guides_enable_on_vim_startup=1 " 自動的にvim-indent-guidesを�
 let g:indent_guides_start_level=2           " スタート位置
 let g:indent_guides_guide_size = 1          " 幅
 let g:indent_guides_auto_colors=0           " カラー
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=gray
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=darkblue
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgray

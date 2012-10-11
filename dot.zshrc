@@ -58,5 +58,7 @@ RPROMPT=$AQUA"[%~"$GREEN"%1(v|%1v|)"$AQUA"]"$DF #ディレクトリー(R)
 SPROMPT="correct:%R -> %r?"
 
 #環境変数
+export SHELL=/usr/local/bin/zsh
+eval "$(rbenv init -)" #rbenvの設定
 export JAVA_HOME=/Libary/Java/HOME
 export PATH=.:$PATH:$JAVA_HOME/bin

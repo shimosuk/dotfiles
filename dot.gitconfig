@@ -1,24 +1,26 @@
 [alias]
-	st = status
+        st = status
         df = diff
+        ds = diff --staged
         ad = add
-	co = checkout
-	ci = commit -v
+        co = checkout
+        ci = commit -v
         ca = commit --amend
         lg = log --graph --decorate 
-	br = branch
+        br = branch
+        ba = branch -a
         pr = pull --rebase
+        rb = rebase
         ri = rebase -i
         ss = stash
         pp = stash pop
-        rb = rebase
 [user]
-	name = ryosuke shimomura
-	email = shimosuk.shimosuke@gmail.com
+        name = ryosuke shimomura
+        email = shimosuk.shimosuke@gmail.com
 [github]
-	user = shimosuk
+        user = shimosuk
 [color]
-	ui = auto
+        ui = auto
 [core]
         #editor = /usr/bin/vim
         editor = env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim -u $HOME/.vimrc
@@ -28,4 +30,4 @@
 [core]
         quotepath = false
 [diff "word"]
-	textconv = strings
+        textconv = strings

@@ -33,6 +33,7 @@ alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim -u $
 
 alias be='bundle exec'
 alias rs="rspec"
+alias ctags='/usr/local/bin/ctags'
 #branch表示
 autoload colors; colors
 autoload -Uz vcs_info

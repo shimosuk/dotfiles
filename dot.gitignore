@@ -1,0 +1,8 @@
+tags
+*.swp
+*.swo
+*.DS_Store
+
+# Microsoft系の設定
+*.TMP
+*~$*.doc

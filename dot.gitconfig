@@ -3,12 +3,15 @@
         df = diff
         ds = diff --staged
         ad = add
+        aa = add .
         co = checkout
         ci = commit -v
-        ca = commit --amend
+        ca = commit --amend -v
         lg = log --graph --decorate 
+        lp = log --graph --decorate -p
         br = branch
         ba = branch -a
+        bd = branch -d
         pr = pull --rebase
         rb = rebase
         ri = rebase -i

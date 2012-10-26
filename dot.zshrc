@@ -27,10 +27,6 @@ alias emoji="open http://www.emoji-cheat-sheet.com"
 alias diary="open http://d.hatena.ne.jp/shimosuk/"
 alias mail="open https://mail.google.com/mail/u/0/?shva=1#inbox"
 
-#MacVim.appのVimを使用するためのalias
-alias mvim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim -u $HOME/.vimrc "$@"'
-
 alias be='bundle exec'
 alias rs="rspec"
 alias ctags='/usr/local/bin/ctags'
@@ -65,4 +61,4 @@ export SHELL=/usr/local/bin/zsh
 eval "$(rbenv init -)" #rbenvの設定
 export JAVA_HOME=/Libary/Java/HOME
 export POSTGRES=/Applications/Postgres.app/Contents/MacOS
-export PATH=.:$JAVA_HOME/bin:$POSTGRES/bin:$PATH
+export PATH=.:/usr/local/bin:$JAVA_HOME/bin:$POSTGRES/bin:$PATH

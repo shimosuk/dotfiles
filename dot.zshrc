@@ -64,4 +64,5 @@ SPROMPT="correct:%R -> %r?"
 export SHELL=/usr/local/bin/zsh
 eval "$(rbenv init -)" #rbenvの設定
 export JAVA_HOME=/Libary/Java/HOME
-export PATH=.:$PATH:$JAVA_HOME/bin
+export POSTGRES=/Applications/Postgres.app/Contents/MacOS
+export PATH=.:$JAVA_HOME/bin:$POSTGRES/bin:$PATH

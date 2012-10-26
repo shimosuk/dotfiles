@@ -1,4 +1,16 @@
 set nocompatible
+
+"Vimのpluginの管理(vundle)
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+ "ここからプラグインを書く
+Bundle 'gmarik/vundle'
+
+ "プラグインの記述はここまで
+filetype plugin indent on "vundleの設定end
+
+"通常の設定ファイル
 set number
 set cmdheight=2
 :syntax on

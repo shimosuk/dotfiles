@@ -12,7 +12,7 @@ filetype plugin indent on "vundleの設定end
 
 set encoding=utf-8
 "文字コードの判定優先順位
-set fileencodings=iso-2022-jp,sjis,utf-8
+set fileencodings=utf-8,sjis,iso-2022-jp
 "改行コードの判定優先順位
 set fileformats=unix,mac,dos
 

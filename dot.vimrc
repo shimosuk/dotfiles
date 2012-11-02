@@ -39,3 +39,5 @@ set shiftwidth=2
 
 "ショートカット
 noremap <C-j> o<ESC>
+noremap ; :
+noremap : ;

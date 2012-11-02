@@ -22,7 +22,6 @@ set cmdheight=2
 set statusline=%f\ %l\/%L\ %r
 set statusline+=%=%{'['.(&fenc!=''?&fenc:&enc).'][改行:'.&ff.']'}
 
-
 "行番号
 set number
 
@@ -31,6 +30,12 @@ syntax on
 colorscheme delek
 "クリップボード
 set clipboard+=unnamed
+
+" タブ幅の設定
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 
 "ショートカット
 noremap <CR> o<ESC>

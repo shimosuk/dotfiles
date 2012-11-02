@@ -38,4 +38,4 @@ set softtabstop=2
 set shiftwidth=2
 
 "ショートカット
-noremap <CR> o<ESC>
+noremap <C-j> o<ESC>

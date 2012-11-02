@@ -31,3 +31,6 @@ syntax on
 colorscheme delek
 "クリップボード
 set clipboard+=unnamed
+
+"ショートカット
+noremap <CR> o<ESC>

@@ -1,6 +1,7 @@
 set nocompatible
 
 "Vimのpluginの管理(vundle)
+"
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -19,7 +20,7 @@ set fileformats=unix,mac,dos
 "アンダーバーの設定
 set laststatus=2
 set cmdheight=2
-set statusline=%f\ %l\/%L\ %r
+set statusline=%f%r%h%w\ \%l\/%L\ \%m
 set statusline+=%=%{'['.(&fenc!=''?&fenc:&enc).'][改行:'.&ff.']'}
 
 "行番号

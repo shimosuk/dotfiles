@@ -7,6 +7,8 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
  "ここからプラグインを書く
 Bundle 'gmarik/vundle'
+Bundle 'Shougo/unite.vim'
+Bundle 'Shougo/vimfiler'
 
  "プラグインの記述はここまで
 filetype plugin indent on "vundleの設定end
@@ -42,3 +44,7 @@ set shiftwidth=2
 noremap <C-j> o<ESC>
 noremap ; :
 noremap : ;
+
+
+" unite.vimの設定
+noremap <Space>f :VimFiler -split -simple -winwidth=35 -no-quit<CR>

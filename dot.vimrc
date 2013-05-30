@@ -9,6 +9,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimfiler'
+Bundle 'molokai'
 
  "プラグインの記述はここまで
 filetype plugin indent on "vundleの設定end
@@ -30,7 +31,7 @@ set number
 
 "ターミナルカラー
 syntax on
-colorscheme delek
+
 "クリップボード
 set clipboard+=unnamed
 

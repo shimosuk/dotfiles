@@ -59,7 +59,7 @@ SPROMPT="correct:%R -> %r?"
 #環境変数
 export LANG=ja_JP.UTF-8
 export SHELL=/usr/local/bin/zsh
-eval "$(rbenv init -)" #rbenvの設定
+eval "$(rbenv init - zsh)" #rbenvの設定
 export JAVA_HOME=/Libary/Java/HOME
 export POSTGRES=/Applications/Postgres.app/Contents/MacOS
 export PATH=.:/usr/local/bin:$JAVA_HOME/bin:$POSTGRES/bin:$PATH

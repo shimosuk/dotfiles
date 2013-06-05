@@ -2,7 +2,7 @@ tags
 *.swp
 *.swo
 *.DS_Store
-.ruby-version
+.rbenv-version
 
 # Microsoft系の設定
 *.TMP

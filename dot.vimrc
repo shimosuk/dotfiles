@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimfiler'
 Bundle 'molokai'
+Bundle 'nathanaelkane/vim-indent-guides'
 
  "プラグインの記述はここまで
 filetype plugin indent on "vundleの設定end
@@ -53,3 +54,11 @@ noremap <Space>f :VimFiler -split -simple -winwidth=35 -no-quit<CR>
 " vimgrepの設定
 noremap <C-n> :cn<CR>
 noremap <C-p> :cp<CR>
+
+" vim-indent-guides の設定
+let g:indent_guides_enable_on_vim_startup=1 " 自動的にvim-indent-guidesをオン
+let g:indent_guides_start_level=2           " スタート位置
+let g:indent_guides_guide_size = 1          " 幅
+let g:indent_guides_auto_colors=0           " カラー
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=gray
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgray

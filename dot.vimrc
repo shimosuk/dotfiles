@@ -49,3 +49,7 @@ noremap : ;
 
 " unite.vimの設定
 noremap <Space>f :VimFiler -split -simple -winwidth=35 -no-quit<CR>
+
+" vimgrepの設定
+noremap <C-n> :cn<CR>
+noremap <C-p> :cp<CR>

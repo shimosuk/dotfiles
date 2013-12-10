@@ -12,4 +12,5 @@ ln -sf $HOME/dotfiles/dot.gitmessage.txt $HOME/.gitmessage.txt
 ln -sf $HOME/dotfiles/dot.vimrc $HOME/.vimrc
 ln -sf $HOME/dotfiles/dot.zshrc $HOME/.zshrc
 ln -sf $HOME/dotfiles/dot.vim $HOME/.vim
-
+git submodule init
+git submodule update

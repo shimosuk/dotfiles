@@ -55,6 +55,7 @@ noremap <Space>f :VimFiler -split -simple -winwidth=35 -no-quit<CR>
 noremap <C-n> :cn<CR>
 noremap <C-p> :cp<CR>
 
+colorscheme molokai
 " vim-indent-guides の設定
 let g:indent_guides_enable_on_vim_startup=1 " 自動的にvim-indent-guidesをオン
 let g:indent_guides_start_level=2           " スタート位置

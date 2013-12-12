@@ -18,6 +18,7 @@
         ri = rebase -i
         ss = stash
         pp = stash pop
+        fa = fetch --progress --all --verbose --prune
 [user]
         name = ryosuke shimomura
         email = shimosuk.shimosuke@gmail.com

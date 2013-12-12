@@ -42,11 +42,22 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
-"ショートカット
+" ノーマルモード
 noremap <C-j> o<ESC>
 noremap ; :
 noremap : ;
-
+" インサートモード
+inoremap <buffer> { {}<LEFT>
+inoremap <buffer> ( ()<LEFT>
+inoremap <buffer> [ []<LEFT>
+inoremap <buffer> < <><LEFT>
+inoremap <buffer> " ""<LEFT>
+inoremap <buffer> ' ''<LEFT>
+" ビジュアルモード
+vnoremap { "zdi<C-V>{<C-R>z}<ESC>
+vnoremap [ "zdi<C-V>[<C-R>z]<ESC>
+vnoremap ( "zdi<C-V>(<C-R>z)<ESC>
+vnoremap ' "zdi'<C-R>z'<ESC>
 
 " unite.vimの設定
 noremap <Space>f :VimFiler -split -simple -winwidth=35 -no-quit<CR>
@@ -55,6 +66,7 @@ noremap <Space>f :VimFiler -split -simple -winwidth=35 -no-quit<CR>
 noremap <C-n> :cn<CR>
 noremap <C-p> :cp<CR>
 
+colorscheme molokai
 " vim-indent-guides の設定
 let g:indent_guides_enable_on_vim_startup=1 " 自動的にvim-indent-guidesをオン
 let g:indent_guides_start_level=2           " スタート位置

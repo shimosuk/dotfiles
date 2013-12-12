@@ -58,6 +58,7 @@ SPROMPT="correct:%R -> %r?"
 
 #環境変数
 export POSTGRES=/Applications/Postgres.app/Contents/MacOS
+export PATH=.:/usr/local/bin:$POSTGRES/bin:$PATH
 if [ -f .proxy.sh ]; then
   source .proxy.sh
 fi

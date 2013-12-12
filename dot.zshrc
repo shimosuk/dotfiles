@@ -68,7 +68,7 @@ export PATH=.:/usr/local/bin:$POSTGRES/bin:$PATH
 ## zstyle 補完の色
 export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 
-zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' '+m:{A-Z}={a-z}' # 補完の大小文字の無視
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' '+m:{A-Z}={a-z}' # 補完の大小文字の無視
 zstyle ':completion:*:(processes|jobs)' menu yes select=2 # リスト選択
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS} # 補完の色設定
 

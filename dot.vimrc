@@ -1,7 +1,7 @@
 set nocompatible
 
 "Vimのpluginの管理(vundle)
-"
+
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -44,8 +44,10 @@ set shiftwidth=2
 
 " ノーマルモード
 noremap <C-j> o<ESC>
+noremap <C-l> <ESC>
 noremap ; :
 noremap : ;
+
 " インサートモード
 inoremap <buffer> { {}<LEFT>
 inoremap <buffer> ( ()<LEFT>
@@ -53,6 +55,8 @@ inoremap <buffer> [ []<LEFT>
 inoremap <buffer> < <><LEFT>
 inoremap <buffer> " ""<LEFT>
 inoremap <buffer> ' ''<LEFT>
+inoremap <C-l> <ESC>
+
 " ビジュアルモード
 vnoremap { "zdi<C-V>{<C-R>z}<ESC>
 vnoremap [ "zdi<C-V>[<C-R>z]<ESC>

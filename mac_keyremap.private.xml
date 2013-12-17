@@ -5,14 +5,14 @@
     <equal>com.googlecode.iterm2</equal>
   </appdef>
   <appdef>
-    <appname>MACVIM</appname>
-    <equal>org.vim.MacVim</equal>
+    <appname>TERMINAL</appname>
+    <equal>com.apple.Terminal</equal>
   </appdef>
   <list>
     <item>
-      <name>Leave Insert Mode with EISUU (vim keybind apps)</name>
+      <name>ESC with EISUU (Enable at only iTerm2 and Terminal)</name>
       <identifier>private.vim_keybind_apps_esc_with_eisuu</identifier>
-      <only>iTERM2,TERMINAL,MACVIM</only>
+      <only>iTERM2,TERMINAL</only>
       <autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
       <autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
       <autogen>--KeyToKey-- KeyCode::L, VK_CONTROL, KeyCode::L, VK_CONTROL, KeyCode::JIS_EISUU</autogen>

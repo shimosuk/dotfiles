@@ -8,14 +8,31 @@
     <appname>TERMINAL</appname>
     <equal>com.apple.Terminal</equal>
   </appdef>
+  <appdef>
+    <appname>ECLIPSE</appname>
+    <equal>com.eclipse.eclipse</equal>
+  </appdef>
   <list>
     <item>
       <name>ESC with EISUU (Enable at only iTerm2 and Terminal)</name>
-      <identifier>private.vim_keybind_apps_esc_with_eisuu</identifier>
+      <identifier>private.terminal_keybind_apps_esc_with_eisuu</identifier>
       <only>iTERM2,TERMINAL</only>
       <autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
       <autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
       <autogen>--KeyToKey-- KeyCode::L, VK_CONTROL, KeyCode::L, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+    </item>
+  </list>
+  <list>
+    <item>
+      <name>Same Terminal (Enable at only Eclipse)</name>
+      <identifier>private.eclipse_keybind_apps_same_terminal</identifier>
+      <only>ECLIPSE</only>
+      <autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+      <autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+      <autogen>--KeyToKey-- KeyCode::L, VK_CONTROL, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+      <autogen>--KeyToKey-- KeyCode::H, VK_CONTROL, KeyCode::DELETE</autogen>
+      <autogen>--KeyToKey-- KeyCode::M, VK_CONTROL, KeyCode::RETURN</autogen>
+      <autogen>--KeyToKey-- KeyCode::M, ModifierFlag::COMMAND_R, KeyCode::M, VK_CONTROL</autogen>
     </item>
   </list>
 </root>

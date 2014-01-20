@@ -7,3 +7,8 @@ tags
 # Microsoft系の設定
 *.TMP
 *~$*.doc
+
+# Intellij
+.idea/
+*.iml
+*.iws

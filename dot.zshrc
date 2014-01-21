@@ -6,7 +6,14 @@ compinit
 setopt auto_pushd # cd での移動を記録 (cd -[Tab])
 setopt correct # コマンド修正
 setopt nolistbeep # 消音
-
+# ヒストリに追加されるコマンド行が古いものと同じなら古いものを削除
+setopt hist_ignore_all_dups
+# スペースで始まるコマンド行はヒストリリストから削除
+setopt hist_ignore_space
+# 余分な空白は詰めて記録
+setopt hist_reduce_blanks
+# 履歴をインクリメンタルに追加
+setopt inc_append_history
 
 #色の設定
 local RED="31"

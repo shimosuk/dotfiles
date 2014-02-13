@@ -78,3 +78,8 @@ let g:indent_guides_guide_size = 1          " 幅
 let g:indent_guides_auto_colors=0           " カラー
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=gray
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgray
+
+set list
+set listchars=tab:>-,extends:<,trail:-,eol:<
+highlight NonText term=underline ctermfg=black guifg=darkgray
+highlight SpecialKey term=underline ctermfg=red guifg=darkgray

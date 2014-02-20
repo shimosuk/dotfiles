@@ -3,7 +3,7 @@
         df = diff
         ds = diff --staged
         ad = add
-        aa = add .
+        aa = add --all .
         co = checkout
         ci = commit -v
         ca = commit --amend -v

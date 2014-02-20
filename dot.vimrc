@@ -11,6 +11,7 @@ Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimfiler'
 Bundle 'molokai'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'rcmdnk/vim-markdown'
 
  "プラグインの記述はここまで
 filetype plugin indent on "vundleの設定end

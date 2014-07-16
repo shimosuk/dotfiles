@@ -62,8 +62,8 @@ precmd () {
 }
 
 #環境変数
-export POSTGRES=/Applications/Postgres.app/Contents/MacOS
-export PATH=.:/usr/local/bin:$POSTGRES/bin:$PATH
+export PATH=/usr/local/bin:$PATH
+
 
 #alias
 alias g="git"
@@ -79,6 +79,9 @@ alias be='bundle exec'
 alias rs="rspec"
 alias ctags='/usr/local/bin/ctags'
 
+if [ -f ~/.zshrc.local ]; then
+ source ~/.zshrc.local
+fi
 if [ -f .proxy.sh ]; then
   source .proxy.sh
 fi

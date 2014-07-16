@@ -30,6 +30,8 @@ set statusline+=%=%{'['.(&fenc!=''?&fenc:&enc).'][改行:'.&ff.']'}
 
 "行番号
 set number
+"検索結果ハイライト
+set hlsearch
 
 "ターミナルカラー
 syntax on
@@ -48,6 +50,7 @@ noremap <C-j> o<ESC>
 noremap <C-l> <ESC>
 noremap ; :
 noremap : ;
+noremap <Esc><Esc> :nohlsearch<CR><Esc>
 
 " インサートモード
 inoremap <buffer> { {}<LEFT>

@@ -4,6 +4,7 @@ autoload -Uz compinit && compinit
 compinit
 
 setopt auto_pushd # cd での移動を記録 (cd -[Tab])
+setopt pushd_ignore_dups # cd での移動を記録重複で記録しない
 setopt correct # コマンド修正
 setopt nolistbeep # 消音
 # ヒストリに追加されるコマンド行が古いものと同じなら古いものを削除

@@ -1,20 +1,33 @@
 set nocompatible
 
-"Vimのpluginの管理(vundle)
+"Vimのpluginの管理(neobundle)
+if !1 | finish | endif
 
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
- "ここからプラグインを書く
-Bundle 'gmarik/vundle'
-Bundle 'Shougo/unite.vim'
-Bundle 'Shougo/vimfiler'
-Bundle 'molokai'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'rcmdnk/vim-markdown'
+if has('vim_starting')
+  if &compatible
+    set nocompatible
+  endif
 
- "プラグインの記述はここまで
-filetype plugin indent on "vundleの設定end
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'gmarik/vundle'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler'
+NeoBundle 'molokai'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'rcmdnk/vim-markdown'
+
+call neobundle#end()
+
+filetype plugin indent on
+
+NeoBundleCheck
+"プラグインの記述はここまで
 
 set encoding=utf-8
 "文字コードの判定優先順位
